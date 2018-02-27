@@ -1,0 +1,8 @@
+<h1>Todos</h1>
+<p><%= link_to 'Create Todo', new_page_path %></p>
+<% @pages.each do |page| %>
+  <h2><%= page.title %></h2>
+  <%= link_to 'Show Todo', page_path(page) %>
+  <%= link_to 'Edit', edit_page_path(page) %>
+  <%= link_to 'Delete'%>
+<% end %>
